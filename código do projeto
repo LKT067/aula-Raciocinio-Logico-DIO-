@@ -1,0 +1,45 @@
+# class Heroi: Define uma nova classe chamada Heroi.
+class Heroi:
+#def init(self, nome, idade, tipo): Este é o método construtor da classe. Ele é chamado quando um novo objeto da classe Heroi é criado.
+#self: Refere-se à instância atual da classe.
+#self.nome = nome: Atribui o valor do parâmetro nome à propriedade nome do objeto.
+#self.idade = idade: Atribui o valor do parâmetro idade à propriedade idade do objeto.
+#self.tipo = tipo: Atribui o valor do parâmetro tipo à propriedade tipo do objeto.'
+
+    def __init__(self, nome, idade, tipo):
+        self.nome = nome
+        self.idade = idade
+        self.tipo = tipo
+        
+#def atacar(self): Define um método chamado atacar que pertence à classe Heroi.
+#if self.tipo == “mago”: Verifica se o tipo do herói é “mago”.
+#elif self.tipo == “guerreiro”: Verifica se o tipo do herói é “guerreiro”.
+#elif self.tipo == “monge”: Verifica se o tipo do herói é “monge”.
+#elif self.tipo == “ninja”: Verifica se o tipo do herói é “ninja”.
+#else: Caso o tipo não seja nenhum dos anteriores, executa esta parte do código.
+#print(f"O {self.tipo} atacou usando {ataque}"): Exibe a mensagem formatada com o tipo do herói e o tipo de ataque.'''
+
+    def atacar(self):
+        if self.tipo == "mago":
+            ataque = "usou magia"
+        elif self.tipo == "guerreiro":
+            ataque = "usou espada"
+        elif self.tipo == "monge":
+            ataque = "usou artes marciais"
+        elif self.tipo == "ninja":
+            ataque = "usou shuriken"
+        else:
+            ataque = "fez um ataque desconhecido"
+        
+        print(f"O {self.tipo} atacou usando {ataque}")
+
+# Exemplo de uso
+heroi1 = Heroi("Aragorn", 87, "guerreiro")
+heroi2 = Heroi("Gandalf", 2019, "mago")
+heroi3 = Heroi("Bruce Lee", 32, "monge")
+heroi4 = Heroi("Naruto", 17, "ninja")
+
+heroi1.atacar()  # O guerreiro atacou usando espada
+heroi2.atacar()  # O mago atacou usando magia
+heroi3.atacar()  # O monge atacou usando artes marciais
+heroi4.atacar()  # O ninja atacou usando shuriken
